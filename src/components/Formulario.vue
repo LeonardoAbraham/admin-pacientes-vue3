@@ -8,6 +8,11 @@
         alta:'',
         sintomas:''
     })
+
+    const validar = () => {
+        
+        console.log('Validando...')
+    }
 </script>
 
 <template>
@@ -22,7 +27,8 @@
 
         <form
             class="bg-white shadow-md rounded-lg py-10 px-5 mb-10"
-        >   {{ paciente.nombre }}
+            @submit.prevent="validar"
+        >
             <div class="mb-5">
                 <label 
                     for="mascota"
