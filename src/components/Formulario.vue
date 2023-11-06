@@ -1,5 +1,7 @@
 <script setup>
-    
+    import { ref } from 'vue'
+
+    const nombre = ref('')
 </script>
 
 <template>
@@ -27,6 +29,7 @@
                     type="text"
                     placeholder="Nombre de la mascota"
                     class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                    v-model="nombre"    
                 />
             </div>
             <div class="mb-5">
